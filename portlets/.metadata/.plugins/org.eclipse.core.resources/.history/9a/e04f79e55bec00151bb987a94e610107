@@ -1,0 +1,7 @@
+.bottomContent {
+    background: #FFF;
+    margin-top: 0;
+    padding-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}

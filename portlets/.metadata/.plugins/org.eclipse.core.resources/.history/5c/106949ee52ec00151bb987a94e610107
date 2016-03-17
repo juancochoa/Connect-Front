@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans   xmlns="http://www.springframework.org/schema/beans"
+    	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+    	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:task="http://www.springframework.org/schema/task"
+    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+     
+    	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+     
+     
+    	<context:annotation-config />
+    	<mvc:resources location="/WEB-INF/resources" mapping="/WEB-INF/resources/**" />
+    	<bean
+    		class="org.springframework.web.portlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+    	  <bean id="applicationContextProvider" class="com.copaair.connectmiles.upgradecalculator.context.ContextoSpring" />  <!-- Configuración de JSP -->
+    	
+          <bean class="com.copaair.connectmiles.upgradecalculator.controller.UpgradeCalculatorController"></bean>
+    	
+    	<bean id="jspViewResolver"
+    		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    		<property name="viewClass"
+    			value="org.springframework.web.servlet.view.InternalResourceView" />
+    		<property name="prefix" value="/WEB-INF/jsp/" />
+    		<property name="suffix" value=".jsp" />
+    		<property name="order" value="1" />
+    	</bean> <!-- Configuración de Velocity -->
+     
+    	<context:component-scan base-package="com.copaair.connectmiles.upgradecalculator.controller">
+    		<context:exclude-filter expression=".*_Roo_.*"
+    			type="regex" />
+    		<context:exclude-filter expression="org.springframework.stereotype.Controller"
+    			type="annotation" />
+    	</context:component-scan>
+    	<context:annotation-config />
+    	<bean
+    		class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" /> <!-- Habilita las tareas programadas por anotaciones -->
+    	<task:annotation-driven />
+    	
+    		
+    </beans>
+

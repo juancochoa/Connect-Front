@@ -1,0 +1,3 @@
+#Tomcat publish data
+#Thu Mar 17 16:38:53 COT 2016
+org.eclipse.jst.j2ee.server\:/binary\:/home/camilo/.m2/repository/org/springframework/spring-web/3.2.9.RELEASE/spring-web-3.2.9.RELEASE.jar=WEB-INF/lib/spring-web-3.2.9.RELEASE.jar

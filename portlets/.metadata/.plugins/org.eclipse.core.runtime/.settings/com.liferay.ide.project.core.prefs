@@ -1,0 +1,5 @@
+create-new-portlet=false
+default-project-maven-groupid=com.copaair.connectmiles
+eclipse.preferences.version=1
+include-sample-code=false
+project-default-build-type-option=maven

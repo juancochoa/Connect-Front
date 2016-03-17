@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.2.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_2_0.dtd">
+
+<liferay-portlet-app>
+	<portlet>
+		<portlet-name>redimemiles-calculator</portlet-name>
+		<icon>/icon.png</icon>
+		header-portlet-css>/css/css_Fn3PUnFw-02_Ho4oyXxgV_J80OCJPHCgakV8Q5Of5KY.css</header-portlet-css>
+		<header-portlet-css>/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css</header-portlet-css>
+		<header-portlet-css>/css/css_PiurjNjBcfd7vIqeHm8pUXOieZcK_TLr-noBrCIkSsk.css</header-portlet-css>
+		<header-portlet-css>/css/css_tuqeOBz1ozigHOvScJR2wasCmXBizZ9rfd58u6_20EE.css</header-portlet-css>
+		<header-portlet-css>/css/css_ZDRnHbNmDUgApTsRJeU7S79d4IXSvFaMYLjDDyWJ2Js.css</header-portlet-css>
+		<header-portlet-css>/css/main.css</header-portlet-css>
+		<footer-portlet-javascript>/js/i18n.js</footer-portlet-javascript>
+		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
+		<footer-portlet-javascript>/js/utils.js</footer-portlet-javascript>
+		<footer-portlet-javascript>/js/calculadora.js</footer-portlet-javascript>
+		<footer-portlet-javascript>/js/calculadoraEarnMiles.js</footer-portlet-javascript>
+		<footer-portlet-javascript>/js/data.js</footer-portlet-javascript>
+		<footer-portlet-javascript>/js/iKnowMyDestination.js</footer-portlet-javascript>
+	</portlet>
+	<role-mapper>
+		<role-name>administrator</role-name>
+		<role-link>Administrator</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>guest</role-name>
+		<role-link>Guest</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>power-user</role-name>
+		<role-link>Power User</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>user</role-name>
+		<role-link>User</role-link>
+	</role-mapper>
+</liferay-portlet-app>

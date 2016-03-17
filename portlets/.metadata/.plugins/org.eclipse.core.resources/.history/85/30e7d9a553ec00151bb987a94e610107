@@ -1,0 +1,25 @@
+package com.copaair.connectmiles.redimemilescalculator.controller;
+
+import javax.portlet.ActionRequest;
+import javax.portlet.ActionResponse;
+import javax.portlet.RenderRequest;
+import javax.portlet.RenderResponse;
+
+@Controller
+@RequestMapping(value = "VIEW")
+public class RedimeMilesCalculator {
+	@RenderMapping
+	public String defaultRender(RenderRequest request, RenderResponse response,
+			Model model) {
+		return "pagina";
+	}
+ 
+	@ActionMapping
+	public void defaultAction(ActionRequest request, ActionResponse response,
+			Model model) {
+ 
+	}
+ 
+}
+
+

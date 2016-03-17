@@ -1,0 +1,31 @@
+package com.copaair.connectmiles.redimemilescalculator.controller;
+
+import javax.portlet.ActionRequest;
+import javax.portlet.ActionResponse;
+import javax.portlet.RenderRequest;
+import javax.portlet.RenderResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.portlet.bind.annotation.ActionMapping;
+import org.springframework.web.portlet.bind.annotation.RenderMapping;
+
+@Controller
+@RequestMapping(value = "VIEW")
+public class RedimeMilesCalculatorController {
+	@RenderMapping
+	public String defaultRender(RenderRequest request, RenderResponse response,
+			Model model) {
+		return "exactDestination";
+	}
+ 
+	@ActionMapping
+	public void defaultAction(ActionRequest request, ActionResponse response,
+			Model model) {
+ 
+	}
+ 
+}
+
+
